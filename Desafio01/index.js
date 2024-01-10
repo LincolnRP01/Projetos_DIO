@@ -1,5 +1,35 @@
-/*
+let SaldoTotal = Saldo(143, 67)
 
+function Saldo(QuantVit, QuantDer){
+    let calculo = QuantVit - QuantDer;
+    return calculo
+
+
+}
+
+let nivel = "";
+
+if( SaldoTotal <= 10){
+    nivel = "Ferro"
+}else if(SaldoTotal >= 11 && SaldoTotal <= 20){
+    nivel = "Bronze"
+}else if(SaldoTotal >= 21 && SaldoTotal <= 50){
+    nivel = "Prata"
+}else if(SaldoTotal >= 51 && SaldoTotal <= 80){
+    nivel = "Ouro"
+}else if(SaldoTotal >= 81 && SaldoTotal <= 90){
+    nivel = "Diamante"
+}else if(SaldoTotal >= 91 && SaldoTotal <= 100){
+    nivel = "Lendario"
+}else{
+    nivel = "Imortal"
+}
+
+console.log(`O Herói tem de saldo de ${SaldoTotal} está no nível de ${nivel}`)
+
+
+/*
+Instruções para entrega
 **O Que deve ser utilizado**
 
 - Variáveis
